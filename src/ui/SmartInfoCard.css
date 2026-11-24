@@ -1,0 +1,99 @@
+.card {
+    border-radius: 12px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card.success {
+    border-left: 5px solid #22c55e;
+}
+
+.card.warning {
+    border-left: 5px solid #f59e0b;
+}
+
+.card.danger {
+    border-left: 5px solid #ef4444;
+}
+
+.card.info {
+    border-left: 5px solid #3b82f6;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.value {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.trend {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.trend.up {
+    color: #22c55e;
+}
+
+.trend.down {
+    color: #ef4444;
+}
+
+.trend.neutral {
+    color: #888;
+}
+
+.description {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.card-footer {
+    margin-top: 12px;
+}
+
+.card-footer button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.card-footer button:hover {
+    background: #1d4ed8;
+}
+
+.comparison {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.comparison.up {
+    color: #22c55e;
+}
+
+.comparison.down {
+    color: #ef4444;
+}
+
+.comparison.neutral {
+    color: #888;
+}

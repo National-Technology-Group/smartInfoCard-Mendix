@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="rqmna.smartinfocard.SmartInfoCard"
+    pluginWidget="true"
+    needsEntityContext="false"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Smart Info Card</name>
+    <description>Advanced KPI Card Widget</description>
+    <icon />
+
+    <properties>
+        <propertyGroup caption="Content">
+            <property key="title" type="textTemplate">
+                <caption>Title</caption>
+                <description>Card title</description>
+            </property>
+
+            <property key="value" type="textTemplate">
+                <caption>Value</caption>
+                <description>Main value</description>
+            </property>
+
+            <property key="previousValue" type="textTemplate" required="false">
+                <caption>Previous Value</caption>
+                <description>Value to compare against</description>
+            </property>
+
+            <property key="description" type="textTemplate" required="false">
+                <caption>Description</caption>
+                <description>Extra info</description>
+            </property>
+        </propertyGroup>
+
+        <propertyGroup caption="Action">
+            <property key="buttonText" type="textTemplate" required="false">
+                <caption>Button Text to the button</caption>
+                <description>Text inside button</description>
+            </property>
+
+            <property key="onClickAction" type="action">
+                <caption>On Click</caption>
+                <description>Action when clicking button</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
